@@ -1,14 +1,11 @@
-import { useState } from "react";
-import "./App.css";
+import styles from "./App.module.scss";
 import { RegisterMicroApps } from "./utils/micro-app";
+import { MainApp } from "./common/main-app";
 function App() {
   return (
-    <>
-      <div>
-        layout框架
-        <RegisterMicroApps></RegisterMicroApps>
-      </div>
-    </>
+    <div className={styles["main-app-body"]}>
+      <MainApp />
+    </div>
   );
 }
 
